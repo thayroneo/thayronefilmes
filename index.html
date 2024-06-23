@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thayrone Filmes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>THAYRONE FILMES</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Filmes</a></li>
+                <li><a href="#">Séries</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <div class="search-panel">
+            <input type="text" id="movie-title" placeholder="Digite o título do filme...">
+            <div id="movie-suggestions" class="suggestions-container"></div>
+        </div>
+        <div class="container">
+            <div class="movie-details-panel">
+                <div id="movie-details">
+                    <div id="movie-poster"></div>
+                    <div id="movie-info"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal para o player do filme -->
+    <div id="playerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="player-container">
+                <iframe id="playerFrame" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
